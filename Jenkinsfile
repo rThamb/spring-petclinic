@@ -1,10 +1,20 @@
 pipeline {
-agent any
-stages {
-stage('Build') {
-steps {
-bat './mvnw package'
-}
-}
-}
+	agent any
+	stages {
+		stage('Build') {
+			steps {
+				bat './mvnw package'
+			}
+		}
+		stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
+	}
 }

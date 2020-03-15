@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Build') {
 steps {
-sh './mvn package'
+sh './mvnw package'
 }
 }
 }

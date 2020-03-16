@@ -27,5 +27,6 @@ pipeline {
         mail to: 'omega180pro@gmail.com',
              subject: "The Pipeline Was Built Successfully: ${currentBuild.fullDisplayName}",
              body: "BUILD, TEST, PACKAGE, DEPLOY ran sucessfully. Visit ${env.BUILD_URL} for more info."
-    }
+		}
+	}
 }
